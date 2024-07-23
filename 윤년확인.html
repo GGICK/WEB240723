@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>윤년확인</title>
+    <script>
+      const rawinput = prompt("연도 입력 해주세요.");
+      const year = Number(rawinput);
+      const e = year % 4;
+      if (e === 0) {
+        alert(`${rawinput}년은 윤년입니다.`);
+      } else {
+        alert(`${rawinput}년은 윤년이 아닙니다.`);
+      }
+    </script>
+  </head>
+  <body></body>
+</html>

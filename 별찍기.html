@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Star</title>
+    <!-- <script>
+      let output = "";
+
+      for (let i = 0; i < 10; i++) {
+        for (let j = 0; j < i; j++) {
+          output += "*";
+        }
+        output += "\n";
+      }
+
+      console.log(output);
+    </script> -->
+
+    <script>
+      let output = "";
+
+      for (let i = 0; i < 15; i++) {
+        // 공백을 추가하는 루프
+        for (let j = 0; j < 15 - i; j++) {
+          output += " ";
+        }
+        // 별 문자를 추가하는 루프
+        for (let k = 0; k < 2 * i - 1; k++) {
+          output += "*";
+        }
+        // 각 줄 끝에 새 줄 추가
+        output += "\n";
+      }
+
+      alert(output);
+    </script>
+  </head>
+  <body></body>
+</html>
